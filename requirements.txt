@@ -1,0 +1,25 @@
+# Web Framework
+fastapi==0.95.2  # Last version before pydantic v2
+pydantic==1.10.12  # Last v1 release, more stable with our codebase
+uvicorn==0.22.0  # Compatible version
+uvloop>=0.17.0  # Newer version with ARM64 support
+websockets>=10.0  # WebSocket support
+
+# Database
+sqlalchemy>=1.4.0,<1.5.0
+alembic>=1.7.0,<1.8.0
+
+# Security & Authentication
+python-jose[cryptography]>=3.3.0,<3.4.0
+passlib>=1.7.4,<1.8.0
+python-multipart>=0.0.5,<0.0.6
+
+# Payment Processing
+squareup>=17.0.0,<18.0.0
+
+# Utilities
+python-dotenv>=0.19.0,<0.20.0
+pytz>=2021.3
+zeroconf>=0.38.0,<0.39.0
+python-escpos>=3.0a8  # Receipt printer support
+psutil>=5.8.0,<5.9.0  # System monitoring

@@ -1,0 +1,5 @@
+# Automatically mount USB drive when plugged in
+ACTION=="add", KERNEL=="sda1", SUBSYSTEMS=="usb", RUN+="/usr/bin/systemd-mount --no-block --collect --options 'defaults,nofail' /dev/sda1 /media/usbdrive"
+
+# Clean up when USB is removed
+ACTION=="remove", KERNEL=="sda1", RUN+="/usr/bin/systemd-umount /media/usbdrive"

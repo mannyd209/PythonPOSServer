@@ -1,0 +1,175 @@
+{
+  "staff": [
+    {
+      "name": "MannyD",
+      "pin": 1432,
+      "hourly_rate": 0.00,
+      "isAdmin": true,
+      "working": false,
+      "break": false
+    }
+  ],
+  "categories": [
+    {
+      "name": "Wings",
+      "sort_order": 1,
+      "category_id": 100001
+    },
+    {
+      "name": "Burgers",
+      "sort_order": 2,
+      "category_id": 100002
+    },
+    {
+      "name": "Sides",
+      "sort_order": 3,
+      "category_id": 100003
+    },
+    {
+      "name": "Drinks",
+      "sort_order": 4,
+      "category_id": 100004
+    }
+  ],
+  "items": [
+    {
+      "name": "6 Wings",
+      "item_id": 200001,
+      "category_id": 100001,
+      "reg_price": 10.00,
+      "event_price": 15.00,
+      "sort_order": 1,
+      "available": true,
+      "mod_list_id": [300001, 300002]
+    },
+    {
+      "name": "12 Wings",
+      "item_id": 200002,
+      "category_id": 100001,
+      "reg_price": 18.00,
+      "event_price": 25.00,
+      "sort_order": 2,
+      "available": true,
+      "mod_list_id": [300001, 300002]
+    },
+    {
+      "name": "Classic Burger",
+      "item_id": 200003,
+      "category_id": 100002,
+      "reg_price": 12.00,
+      "event_price": 16.00,
+      "sort_order": 1,
+      "available": true,
+      "mod_list_id": [300003]
+    },
+    {
+      "name": "French Fries",
+      "item_id": 200004,
+      "category_id": 100003,
+      "reg_price": 4.00,
+      "event_price": 6.00,
+      "sort_order": 1,
+      "available": true,
+      "mod_list_id": []
+    },
+    {
+      "name": "Soft Drink",
+      "item_id": 200005,
+      "category_id": 100004,
+      "reg_price": 3.00,
+      "event_price": 4.00,
+      "sort_order": 1,
+      "available": true,
+      "mod_list_id": []
+    }
+  ],
+  "mod_lists": [
+    {
+      "item_id": [200001, 200002],
+      "name": "1st Sauce",
+      "mod_list_id": 300001,
+      "min_selections": 1,
+      "max_selections": 1,
+      "sort_order": 1,
+      "available": true,
+      "mods": [
+        {
+          "name": "BBQ",
+          "mod_price": 0.00,
+          "sort_order": 1,
+          "available": true
+        },
+        {
+          "name": "Teriyaki",
+          "mod_price": 0.00,
+          "sort_order": 2,
+          "available": true
+        },
+        {
+          "name": "Buffalo",
+          "mod_price": 0.00,
+          "sort_order": 3,
+          "available": true
+        }
+      ]
+    },
+    {
+      "item_id": [200001, 200002],
+      "name": "Wing Style",
+      "mod_list_id": 300002,
+      "min_selections": 1,
+      "max_selections": 1,
+      "sort_order": 2,
+      "available": true,
+      "mods": [
+        {
+          "name": "Traditional",
+          "mod_price": 0.00,
+          "sort_order": 1,
+          "available": true
+        },
+        {
+          "name": "Boneless",
+          "mod_price": 0.00,
+          "sort_order": 2,
+          "available": true
+        }
+      ]
+    },
+    {
+      "item_id": [200003],
+      "name": "Burger Toppings",
+      "mod_list_id": 300003,
+      "min_selections": 0,
+      "max_selections": 6,
+      "sort_order": 1,
+      "available": true,
+      "mods": [
+        {
+          "name": "Lettuce",
+          "mod_price": 0.00,
+          "sort_order": 1,
+          "available": true
+        },
+        {
+          "name": "Tomato",
+          "mod_price": 0.00,
+          "sort_order": 2,
+          "available": true
+        },
+        {
+          "name": "Cheese",
+          "mod_price": 1.00,
+          "sort_order": 3,
+          "available": true
+        },
+        {
+          "name": "Bacon",
+          "mod_price": 2.00,
+          "sort_order": 4,
+          "available": true
+        }
+      ]
+    }
+  ]
+} 
